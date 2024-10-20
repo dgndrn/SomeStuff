@@ -35,3 +35,10 @@ network:
 
   sudo netplan try
   sudo netplan apply
+
+
+
+  
+ip link set enp0s8 up
+/usr/sbin/dhclient enp0s8
+  
