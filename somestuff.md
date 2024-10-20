@@ -1,5 +1,7 @@
 ip addr add [ip_address] dev [interface]
+
 sudo ifconfig [interface] up
+
 sudo ip link set [interface] up
 
 sudo nano /etc/netplan/config.yaml
@@ -43,4 +45,10 @@ network:
 ip link set enp0s8 up
 
 /usr/sbin/dhclient enp0s8
+
+nano /etc/network/interfaces
+
+auto enp0s8
+
+iface enp0s8 inet dhcp
   
