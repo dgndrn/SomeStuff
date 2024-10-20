@@ -52,3 +52,8 @@ auto enp0s8
 
 iface enp0s8 inet dhcp
   
+edit ~/.bashrc
+export PATH=$PATH:{path}
+source ~./bashrc
+
+
