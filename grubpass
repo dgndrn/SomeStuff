@@ -1,0 +1,9 @@
+  user@host~ % grub-mkpasswd-pbkdf2
+Enter password: 
+Reenter password: 
+PBKDF2 hash of your password is grub.pbkdf2.sha512.10000.63553D205CF6E...  
+
+sudo nano /etc/grub.d/40_custom  
+
+set superusers="username"  
+password_pbkdf2 username hash 
