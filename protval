@@ -1,0 +1,7 @@
+PROT_READ (0x1): Bellek bölgesine okuma izni verir.
+
+PROT_WRITE (0x2): Bellek bölgesine yazma izni verir.
+
+PROT_EXEC (0x4): Bellek bölgesine yürütme izni verir.
+
+PROT_NONE (0x0): Bellek bölgesine hiçbir erişim izni vermez.
