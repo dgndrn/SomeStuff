@@ -1,3 +1,7 @@
+  gcc vuln.c -o vuln -W -fno-stack-protector -z execstack -no-pie -Wl,-z,relro
+
+
+
 ip addr add [ip_address] dev [interface]
 
 sudo ifconfig [interface] up
