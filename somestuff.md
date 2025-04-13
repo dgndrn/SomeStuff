@@ -1,6 +1,6 @@
   gcc vuln.c -o vuln -W -fno-stack-protector -z execstack -no-pie -Wl,-z,relro
 
-
+git clone https://[TOKEN]@github.com/[REPO-OWNER]/[REPO-NAME]
 
 ip addr add [ip_address] dev [interface]
 
