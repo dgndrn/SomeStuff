@@ -1,3 +1,8 @@
+  sudo iptables -A OUTPUT -s amazon.com -m owner --uid-owner <USERNAME> -j ACCEPT
+
+  sudo iptables -A OUTPUT -m owner --uid-owner <USERNAME> -j REJECT
+  
+  
   awk '{print $1}'
   
   sed 's/old/new/g'
