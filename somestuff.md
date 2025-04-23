@@ -1,3 +1,6 @@
+  chmod a+rw /dev/vmnetx
+  tcpdump -i vmnetx
+  
   sudo iptables -A OUTPUT -s amazon.com -m owner --uid-owner <USERNAME> -j ACCEPT
 
   sudo iptables -A OUTPUT -m owner --uid-owner <USERNAME> -j REJECT
