@@ -1,8 +1,17 @@
   sudo iptables -A OUTPUT -s amazon.com -m owner --uid-owner <USERNAME> -j ACCEPT
 
   sudo iptables -A OUTPUT -m owner --uid-owner <USERNAME> -j REJECT
-
+  
+  -----------------------------------------
    sudo iptables -A OUTPUT -m set --match-set amazon dst -j REJECT
+
+  ------------------------------------------
+
+  sudo iptables -A OUTPUT -d amazon.com -m owner --uid-owner <USERNAME> -j ACCEPT
+
+  sudo iptables -A OUTPUT -p udp --dport 53 -m owner --uid-owner <USERNAME> -j ACCEPT
+
+  sudo iptables -A OUTPUT -m owner --uid-owner <USERNAME> -j REJECT 
   
   awk '{print $1}'
   
