@@ -1,3 +1,7 @@
+  awk '{print $1}'
+  sed 's/old/new/g'
+  cut -d ' ' -f 1
+  
   gcc vuln.c -o vuln -W -fno-stack-protector -z execstack -no-pie -Wl,-z,relro
 
 git clone https://[TOKEN]@github.com/[REPO-OWNER]/[REPO-NAME]
